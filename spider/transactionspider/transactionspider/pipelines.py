@@ -20,7 +20,7 @@ class TransactionspiderPipeline:
     def open_spider(self, spider):
         print("storage file opening...")
         storage_path = "H:/codes/graduateProject/data/source/transaction/"
-        current_index = 11
+        current_index = 6
         self.out_file = open(storage_path +spider.name + '/' + spider.name + "_" + str(current_index) + ".txt", 'w')
 
     def close_spider(self, spider):

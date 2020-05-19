@@ -9,7 +9,7 @@ class TransactionBjSpider(scrapy.Spider):
 
     def start_requests(self):
         url_list = []
-        current_index = 11
+        current_index = 6
         microdistrict_list = open('H:/codes/graduateProject/data/source/microdistrict/bj/microdistrict_bj_' + str(current_index) + '.txt','r').readlines()
         for microdistrict in microdistrict_list:
             url = 'https://bj.lianjia.com/chengjiao/rs' + microdistrict + '/'
