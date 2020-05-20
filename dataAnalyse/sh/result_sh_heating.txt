@@ -1,0 +1,18 @@
+number:
+('', 109457)
+Average area price:
+('', 42433.09644883379)
+Average transaction price:
+('', 328.51470440446934)
+Average transaction cycle:
+('', 434.3648281973743)
+Average listing price / transaction price:
+('', 1.1368665320628193)
+Average views:
+('', 8.515517509158848)
+Average price adjustment:
+('', 8.515517509158848)
+Average followers:
+('', 8.515517509158848)
+Average pageviews:
+('', 8.515517509158848)
