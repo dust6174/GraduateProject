@@ -9,14 +9,14 @@ if __name__ == "__main__":
     spark = SparkContext("local", "WordCount")
 
     # 读取数据，创建弹性式分布数据集（RDD）
-    data = spark.textFile("./transaction/transaction_sz.txt")
+    data = spark.textFile("./transaction/transaction_bj.txt")
 
-    def cleanData(line):
-        line[10] = re.findall(r"\d+", line[10])[0]
-        return line
-    data = data.map(lambda line: line.replace(" ", "").split("|")).map(cleanData).cache()
-
-
+    # def cleanData(line):
+    #     line[10] = re.findall(r"\d+", line[10])[0]
+    #     return line
+    # data = data.map(lambda line: line.replace(" ", "").split("|")).map(cleanData).cache()
+    #
+    data = data.map(lambda line: line.replace(" ", "").split("|")).cache()
 
     # def reduceOtherType(str):
     #     if '室' in str:
@@ -100,27 +100,27 @@ if __name__ == "__main__":
     #     .sortByKey()
     #
     # 楼层
-    floor = data.map(lambda line:line[4]) \
-        .map(lambda string:string[:3])\
-        .map(lambda string:(string,1))\
-        .reduceByKey(lambda a,b:a+b)\
-        .sortByKey()
-    floor.foreach(print)
-    #
-    def reduceAge(str):
-        if str != '未知':
-            age = 2020 - int(str)
-            if age < 5:
-                return "0~5年"
-            elif age < 15:
-                return "5~15年"
-            elif age < 30:
-                return "15~30年"
-            else:
-                return "30年以上"
-        else:
-            return str
-    # # 房龄
+    # floor = data.map(lambda line:line[4]) \
+    #     .map(lambda string:string[:3])\
+    #     .map(lambda string:(string,1))\
+    #     .reduceByKey(lambda a,b:a+b)\
+    #     .sortByKey()
+    # floor.foreach(print)
+    # #
+    # def reduceAge(str):
+    #     if str != '未知':
+    #         age = 2020 - int(str)
+    #         if age < 5:
+    #             return "0~5年"
+    #         elif age < 15:
+    #             return "5~15年"
+    #         elif age < 30:
+    #             return "15~30年"
+    #         else:
+    #             return "30年以上"
+    #     else:
+    #         return str
+    # # # 房龄
     # age = data.map(lambda line:line[5]) \
     #     .map(reduceAge)\
     #     .map(lambda string:(string,1))\
@@ -153,6 +153,16 @@ if __name__ == "__main__":
     #
     # result = type.union(area).union(orientation).union(floor).union(age).union(purpose).union(heating).union(fitment).union(elevator)
     # result.foreach(print)
-
+    # 成交周期
+    def print2file(str):
+        file_out = open("test.txt", 'a')
+        print(str, file=file_out)
+        file_out.close()
+        return str
+    cycle = data.map(lambda line:line[12]) \
+        .map(lambda string:(string,1))\
+        .reduceByKey(lambda a,b:a+b)\
+        .sortByKey()
+    cycle.foreach(lambda line:print2file(line))
 
 

@@ -20,60 +20,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e596afdc-c0ce-49a1-bcbd-2ae770739f73" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bj/result_bj_age.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bj/result_bj_area.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bj/result_bj_elevator.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bj/result_bj_fitment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bj/result_bj_floor.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bj/result_bj_heating.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bj/result_bj_orientation.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bj/result_bj_purpose.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bj/result_bj_type.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataAnalyse_age.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataAnalyse_area.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataAnalyse_elevator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataAnalyse_fitment.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataAnalyse_floor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataAnalyse_heating.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataAnalyse_orientation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataAnalyse_purpose.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataAnalyse_type.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gz/result_gz_age.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gz/result_gz_area.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gz/result_gz_elevator.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gz/result_gz_fitment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gz/result_gz_floor.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gz/result_gz_heating.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gz/result_gz_orientation.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gz/result_gz_purpose.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gz/result_gz_type.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sh/result_sh_age.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sh/result_sh_area.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sh/result_sh_elevator.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sh/result_sh_fitment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sh/result_sh_floor.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sh/result_sh_heating.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sh/result_sh_orientation.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sh/result_sh_purpose.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sh/result_sh_type.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sz/result_sz_age.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sz/result_sz_area.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sz/result_sz_elevator.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sz/result_sz_fitment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sz/result_sz_floor.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sz/result_sz_heating.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sz/result_sz_orientation.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sz/result_sz_purpose.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sz/result_sz_type.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction/transaction_bj.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction/transaction_gz.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction/transaction_sh.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction/transaction_sz.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bj/result_bj_floorandage.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bj/result_bj_orientationandage.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bj/result_bj_orientationandfloor.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bj/result_bj_typeandage.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bj/result_bj_typeandfloor.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bj/result_bj_typeandorientation.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataAnalyse_floorandage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataAnalyse_orientationandage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataAnalyse_orientationandfloor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataAnalyse_typeandage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataAnalyse_typeandfloor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataAnalyse_typeandorientation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gz/result_gz_floorandage.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gz/result_gz_orientationandage.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gz/result_gz_typeandage.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gz/result_gz_typeandfloor.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gz/result_gz_typeandorientation.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sh/result_sh_floorandage.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sh/result_sh_orientationandage.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sh/result_sh_orientationandfloor.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sh/result_sh_typeandage.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sh/result_sh_typeandfloor.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sh/result_sh_typeandorientation.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sz/result_sz_floorandage.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sz/result_sz_orientationandage.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sz/result_sz_orientationandfloor.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sz/result_sz_typeandage.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sz/result_sz_typeandfloor.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sz/result_sz_typeandorientation.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transaction/cleandata.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stopwords-zh.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/text.py" beforeDir="false" afterPath="$PROJECT_DIR$/text.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction_gz.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/text.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction/transaction_bj.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction/transaction_gz.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction/transaction_sh.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction/transaction_sz.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/wordcount.py" beforeDir="false" afterPath="$PROJECT_DIR$/wordcount.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -108,7 +90,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Python.dataAnalyse_elevator">
+  <component name="RunManager" selected="Python.dataAnalyse_floorandage">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="dataAnalyse" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -131,7 +113,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="dataAnalyse_age" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="dataAnalyse_floorandage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="dataAnalyse" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -144,7 +126,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dataAnalyse_age.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dataAnalyse_floorandage.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -153,7 +135,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="dataAnalyse_elevator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="dataAnalyse_orientationandage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="dataAnalyse" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -166,7 +148,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dataAnalyse_elevator.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dataAnalyse_orientationandage.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -175,7 +157,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="dataAnalyse_fitment" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="dataAnalyse_orientationandfloor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="dataAnalyse" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -188,7 +170,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dataAnalyse_fitment.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dataAnalyse_orientationandfloor.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -197,7 +179,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="dataAnalyse_heating" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="dataAnalyse_typeandage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="dataAnalyse" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -210,7 +192,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dataAnalyse_heating.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dataAnalyse_typeandage.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -219,7 +201,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="dataAnalyse_purpose" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="dataAnalyse_typeandfloor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="dataAnalyse" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -232,7 +214,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dataAnalyse_purpose.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dataAnalyse_typeandfloor.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -242,19 +224,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.dataAnalyse_age" />
-      <item itemvalue="Python.dataAnalyse_purpose" />
-      <item itemvalue="Python.dataAnalyse_heating" />
-      <item itemvalue="Python.dataAnalyse_fitment" />
-      <item itemvalue="Python.dataAnalyse_elevator" />
+      <item itemvalue="Python.dataAnalyse_typeandfloor" />
+      <item itemvalue="Python.dataAnalyse_typeandage" />
+      <item itemvalue="Python.dataAnalyse_orientationandfloor" />
+      <item itemvalue="Python.dataAnalyse_orientationandage" />
+      <item itemvalue="Python.dataAnalyse_floorandage" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.dataAnalyse_elevator" />
-        <item itemvalue="Python.dataAnalyse_fitment" />
-        <item itemvalue="Python.dataAnalyse_heating" />
-        <item itemvalue="Python.dataAnalyse_purpose" />
-        <item itemvalue="Python.dataAnalyse_age" />
+        <item itemvalue="Python.dataAnalyse_floorandage" />
+        <item itemvalue="Python.dataAnalyse_orientationandage" />
+        <item itemvalue="Python.dataAnalyse_orientationandfloor" />
+        <item itemvalue="Python.dataAnalyse_typeandage" />
+        <item itemvalue="Python.dataAnalyse_typeandfloor" />
       </list>
     </recent_temporary>
   </component>
@@ -269,6 +251,7 @@
       <option name="presentableId" value="Default" />
       <updated>1589888661909</updated>
       <workItem from="1589888663169" duration="42836000" />
+      <workItem from="1590059106160" duration="10155000" />
     </task>
     <servers />
   </component>
@@ -285,6 +268,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -294,6 +278,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1589968112026" />
+    <state x="499" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590066543854">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="499" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1590066543854" />
     <state x="626" y="179" key="EnvironmentVariablesDialog" timestamp="1589960954813">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -302,43 +290,55 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="548" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1589966747044" />
-    <state width="1492" height="379" key="GridCell.Tab.0.bottom" timestamp="1589977881814">
+    <state width="1492" height="283" key="GridCell.Tab.0.bottom" timestamp="1590069333784">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1492" height="379" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1589977881814" />
-    <state width="1492" height="379" key="GridCell.Tab.0.center" timestamp="1589977881814">
+    <state width="1492" height="283" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1590069333784" />
+    <state width="1492" height="283" key="GridCell.Tab.0.center" timestamp="1590069333784">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1492" height="379" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1589977881814" />
-    <state width="1492" height="379" key="GridCell.Tab.0.left" timestamp="1589977881814">
+    <state width="1492" height="283" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1590069333784" />
+    <state width="1492" height="283" key="GridCell.Tab.0.left" timestamp="1590069333784">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1492" height="379" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1589977881814" />
-    <state width="1492" height="379" key="GridCell.Tab.0.right" timestamp="1589977881814">
+    <state width="1492" height="283" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1590069333784" />
+    <state width="1492" height="283" key="GridCell.Tab.0.right" timestamp="1590069333784">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1492" height="379" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1589977881814" />
+    <state width="1492" height="283" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1590069333784" />
     <state x="270" y="76" key="SettingsEditor" timestamp="1589966714288">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="270" y="76" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1589966714287" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1590067956221">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1536.864@0.0.1536.864" timestamp="1590067956221" />
     <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1589901969169">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1589901969169" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/dataAnalyse$dataAnalyse_orientationandage.coverage" NAME="dataAnalyse_orientationandage Coverage Results" MODIFIED="1590068703980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dataAnalyse$dataAnalyse_typeandfloor.coverage" NAME="dataAnalyse_typeandfloor Coverage Results" MODIFIED="1590067057298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dataAnalyse$dataAnalyse_purpose.coverage" NAME="dataAnalyse_purpose Coverage Results" MODIFIED="1589973927686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dataAnalyse$cleandata.coverage" NAME="cleandata Coverage Results" MODIFIED="1590066998956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dataAnalyse$dataAnalyse_floor.coverage" NAME="dataAnalyse_floor Coverage Results" MODIFIED="1589973027503" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dataAnalyse$test.coverage" NAME="test Coverage Results" MODIFIED="1590063726694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dataAnalyse$dataAnalyse.coverage" NAME="dataAnalyse Coverage Results" MODIFIED="1589889154116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/dataAnalyse$dataAnalyse_elevator.coverage" NAME="dataAnalyse_elevator Coverage Results" MODIFIED="1589976173408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dataAnalyse$dataAnalyse_typeandorientation.coverage" NAME="dataAnalyse_typeandorientation Coverage Results" MODIFIED="1590059949396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dataAnalyse$dataAnalyse_orientationandfloor.coverage" NAME="dataAnalyse_orientationandfloor Coverage Results" MODIFIED="1590068057340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/dataAnalyse$dataAnalyse_age.coverage" NAME="dataAnalyse_age Coverage Results" MODIFIED="1589973392572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/dataAnalyse$dataAnalyse_fitment.coverage" NAME="dataAnalyse_fitment Coverage Results" MODIFIED="1589975515931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/dataAnalyse$dataAnalyse_type.coverage" NAME="dataAnalyse_type Coverage Results" MODIFIED="1589966808978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/dataAnalyse$text.coverage" NAME="text Coverage Results" MODIFIED="1589960137301" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/dataAnalyse$dataAnalyse_purpose.coverage" NAME="dataAnalyse_purpose Coverage Results" MODIFIED="1589973927686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/dataAnalyse$dataAnalyse_floor.coverage" NAME="dataAnalyse_floor Coverage Results" MODIFIED="1589973027503" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/dataAnalyse$dataAnalyse_orientation.coverage" NAME="dataAnalyse_orientation Coverage Results" MODIFIED="1589972779178" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/dataAnalyse$wordcount.coverage" NAME="wordcount Coverage Results" MODIFIED="1589962207116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/dataAnalyse$dataAnalyse.coverage" NAME="dataAnalyse Coverage Results" MODIFIED="1589889154116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/dataAnalyse$wordcount.coverage" NAME="wordcount Coverage Results" MODIFIED="1590063625415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/dataAnalyse$dataAnalyse_area.coverage" NAME="dataAnalyse_area Coverage Results" MODIFIED="1589967377829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/dataAnalyse$dataAnalyse_heating.coverage" NAME="dataAnalyse_heating Coverage Results" MODIFIED="1589974712020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/dataAnalyse$dataAnalyse_elevator.coverage" NAME="dataAnalyse_elevator Coverage Results" MODIFIED="1589976173408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dataAnalyse$dataAnalyse_floorandage.coverage" NAME="dataAnalyse_floorandage Coverage Results" MODIFIED="1590069041948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dataAnalyse$dataAnalyse_typeandage.coverage" NAME="dataAnalyse_typeandage Coverage Results" MODIFIED="1590067710476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
