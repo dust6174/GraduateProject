@@ -25,8 +25,6 @@ if __name__ == "__main__":
         line[4] = line[4][:3]
         line[10] = re.findall(r"\d+", line[10])[0]
         line[11] = re.findall(r"\d+", line[11])[0]
-        # if float(line[10]) < 2100:
-        #     line[10] = float(line[11]) // float(line[4].replace("㎡","")) * 10000
         return line
 
     data = data.map(lambda line: line.replace(" ", "").split("|")).map(cleanData).cache()

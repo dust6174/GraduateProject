@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>链家二手房数据分析系统</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/echarts.min.js"></script>
+</head>
+<body>
+<div th:replace="banner"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-3 sidebar">
+            <div th:replace="sidebar"></div>
+        </div>
+        <div class="col-xs-9">
+            <div th:replace="datavisual"></div>
+        </div>
+    </div>
+</div>
+<div th:replace="footer"></div>
+
+<!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+<script src="/js/jquery.min.js"></script>
+<!-- 包括所有已编译的插件 -->
+<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>

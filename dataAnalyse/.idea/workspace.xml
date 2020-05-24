@@ -20,43 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e596afdc-c0ce-49a1-bcbd-2ae770739f73" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bj/result_bj_floorandage.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bj/result_bj_orientationandage.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bj/result_bj_orientationandfloor.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bj/result_bj_typeandage.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bj/result_bj_typeandfloor.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bj/result_bj_typeandorientation.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataAnalyse_floorandage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataAnalyse_orientationandage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataAnalyse_orientationandfloor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataAnalyse_typeandage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataAnalyse_typeandfloor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataAnalyse_typeandorientation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gz/result_gz_floorandage.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gz/result_gz_orientationandage.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gz/result_gz_typeandage.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gz/result_gz_typeandfloor.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gz/result_gz_typeandorientation.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sh/result_sh_floorandage.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sh/result_sh_orientationandage.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sh/result_sh_orientationandfloor.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sh/result_sh_typeandage.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sh/result_sh_typeandfloor.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sh/result_sh_typeandorientation.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sz/result_sz_floorandage.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sz/result_sz_orientationandage.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sz/result_sz_orientationandfloor.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sz/result_sz_typeandage.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sz/result_sz_typeandfloor.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sz/result_sz_typeandorientation.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction/cleandata.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction/transaction_bj.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction/transaction_gz.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction/transaction_sh.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction/transaction_sz.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordcount.py" beforeDir="false" afterPath="$PROJECT_DIR$/wordcount.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataAnalyse_typeandfloor.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataAnalyse_typeandfloor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataAnalyse_typeandorientation.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataAnalyse_typeandorientation.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,6 +218,7 @@
       <updated>1589888661909</updated>
       <workItem from="1589888663169" duration="42836000" />
       <workItem from="1590059106160" duration="10155000" />
+      <workItem from="1590072867584" duration="1485000" />
     </task>
     <servers />
   </component>
