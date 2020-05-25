@@ -1,6 +1,6 @@
 This is datavisual!
 <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
-<div id="pie_num" style="width: 100%;height:70vh;display: inline-table" ></div>
+<div id="pie_num" style="width: 100%;height:60vh;display: inline-table" ></div>
 <script th:inline="javascript" type="text/javascript">
     // 基于准备好的dom，初始化echarts实例
     var pie_number = echarts.init(document.getElementById('pie_num'));
@@ -12,7 +12,7 @@ This is datavisual!
     }
     var option1 = {
         title: {
-            text: '链家网二手房数据分析饼状图',
+            text: '数量饼状图',
             subtext: '城市:'+[[${res.getCity()}]]+'       影响因素:'+[[${res.getFactor()}]],
             left: 'center'
         },
@@ -50,7 +50,142 @@ This is datavisual!
     var bar_average_area_price = echarts.init(document.getElementById('bar_average_area_price'));
     var option2 = {
         title: {
-            text: '链家网二手房数据分析：平均均价柱状图',
+            text: '平均均价柱状图',
+            subtext: '城市:'+[[${res.getCity()}]]+'       影响因素:'+[[${res.getFactor()}]],
+            left: 'center'
+        },
+        xAxis: {
+            type: 'category',
+            data: [[${res.getUnit().getDescription()}]],
+            axisLabel: {
+                interval: 0,
+                formatter:function(value)
+                {
+                    return value.split("").join("\n");
+                }
+            },
+        },
+        yAxis: {
+            type: 'value',
+            axisLabel: {
+                formatter:'{value}元'
+            }
+        },
+        series: [{
+            data: [[${res.getUnit().getAverage_area_price()}]],
+            type: 'bar',
+            itemStyle: {
+                normal: {
+                    label: {
+                        show: true, //开启显示
+                        position: 'top', //在上方显示
+                        textStyle: { //数值样式
+                            color: 'grey',
+                            fontSize: 12
+                        }
+                    }
+                }
+            },
+        }]
+    };
+    bar_average_area_price.setOption(option2);
+</script>
+<div id="bar_average_transaction_price" style="width: 100%;height:60vh;display: inline-table"></div>
+<script th:inline="javascript" type="text/javascript">
+    var bar_average_transaction_price = echarts.init(document.getElementById('bar_average_transaction_price'));
+    var option2 = {
+        title: {
+            text: '平均成交价柱状图',
+            subtext: '城市:'+[[${res.getCity()}]]+'       影响因素:'+[[${res.getFactor()}]],
+            left: 'center'
+        },
+        xAxis: {
+            type: 'category',
+            data: [[${res.getUnit().getDescription()}]],
+            axisLabel: {
+                interval: 0,
+                formatter:function(value)
+                {
+                    return value.split("").join("\n");
+                }
+            },
+        },
+        yAxis: {
+            type: 'value',
+            axisLabel: {
+                formatter:'{value}万'
+            }
+        },
+        series: [{
+            data: [[${res.getUnit().getAverage_transaction_price()}]],
+            type: 'bar',
+            itemStyle: {
+                normal: {
+                    label: {
+                        show: true, //开启显示
+                        position: 'top', //在上方显示
+                        textStyle: { //数值样式
+                            color: 'grey',
+                            fontSize: 12
+                        }
+                    }
+                }
+            },
+        }]
+    };
+    bar_average_transaction_price.setOption(option2);
+</script>
+<div id="bar_average_transaction_cycle" style="width: 100%;height:60vh;display: inline-table"></div>
+<script th:inline="javascript" type="text/javascript">
+    var bar_average_transaction_cycle = echarts.init(document.getElementById('bar_average_transaction_cycle'));
+    var option2 = {
+        title: {
+            text: '平均成交周期柱状图',
+            subtext: '城市:'+[[${res.getCity()}]]+'       影响因素:'+[[${res.getFactor()}]],
+            left: 'center'
+        },
+        xAxis: {
+            type: 'category',
+            data: [[${res.getUnit().getDescription()}]],
+            axisLabel: {
+                interval: 0,
+                formatter:function(value)
+                {
+                    return value.split("").join("\n");
+                }
+            },
+        },
+        yAxis: {
+            type: 'value',
+            axisLabel: {
+                formatter:'{value}天'
+            }
+        },
+        series: [{
+            data: [[${res.getUnit().getAverage_transaction_cycle()}]],
+            type: 'bar',
+            itemStyle: {
+                normal: {
+                    label: {
+                        show: true, //开启显示
+                        position: 'top', //在上方显示
+                        textStyle: { //数值样式
+                            color: 'grey',
+                            fontSize: 12
+                        }
+                    }
+                }
+            },
+        }]
+    };
+    bar_average_transaction_cycle.setOption(option2);
+</script>
+<div id="bar_average_listing_transaction_price_rate" style="width: 100%;height:60vh;display: inline-table"></div>
+<script th:inline="javascript" type="text/javascript">
+    var bar_average_listing_transaction_price_rate = echarts.init(document.getElementById('bar_average_listing_transaction_price_rate'));
+    var option2 = {
+        title: {
+            text: '平均挂牌价/成交价柱状图',
             subtext: '城市:'+[[${res.getCity()}]]+'       影响因素:'+[[${res.getFactor()}]],
             left: 'center'
         },
@@ -69,9 +204,201 @@ This is datavisual!
             type: 'value'
         },
         series: [{
-            data: [[${res.getUnit().getAverage_area_price()}]],
+            data: [[${res.getUnit().getAverage_listing_transaction_price_rate()}]],
             type: 'bar',
+            itemStyle: {
+                normal: {
+                    label: {
+                        show: true, //开启显示
+                        position: 'top', //在上方显示
+                        textStyle: { //数值样式
+                            color: 'grey',
+                            fontSize: 12
+                        }
+                    }
+                }
+            },
         }]
     };
-    bar_average_area_price.setOption(option2);
+    bar_average_listing_transaction_price_rate.setOption(option2);
+</script>
+<div id="bar_average_views" style="width: 100%;height:60vh;display: inline-table"></div>
+<script th:inline="javascript" type="text/javascript">
+    var bar_average_views = echarts.init(document.getElementById('bar_average_views'));
+    var option2 = {
+        title: {
+            text: '平均带看次数柱状图',
+            subtext: '城市:'+[[${res.getCity()}]]+'       影响因素:'+[[${res.getFactor()}]],
+            left: 'center'
+        },
+        xAxis: {
+            type: 'category',
+            data: [[${res.getUnit().getDescription()}]],
+            axisLabel: {
+                interval: 0,
+                formatter:function(value)
+                {
+                    return value.split("").join("\n");
+                }
+            },
+        },
+        yAxis: {
+            type: 'value',
+            axisLabel: {
+                formatter:'{value}次'
+            }
+        },
+        series: [{
+            data: [[${res.getUnit().getAverage_views()}]],
+            type: 'bar',
+            itemStyle: {
+                normal: {
+                    label: {
+                        show: true, //开启显示
+                        position: 'top', //在上方显示
+                        textStyle: { //数值样式
+                            color: 'grey',
+                            fontSize: 12
+                        }
+                    }
+                }
+            },
+        }]
+    };
+    bar_average_views.setOption(option2);
+</script>
+<div id="bar_average_price_adjustment" style="width: 100%;height:60vh;display: inline-table"></div>
+<script th:inline="javascript" type="text/javascript">
+    var bar_average_price_adjustment = echarts.init(document.getElementById('bar_average_price_adjustment'));
+    var option2 = {
+        title: {
+            text: '平均调价次数柱状图',
+            subtext: '城市:'+[[${res.getCity()}]]+'       影响因素:'+[[${res.getFactor()}]],
+            left: 'center'
+        },
+        xAxis: {
+            type: 'category',
+            data: [[${res.getUnit().getDescription()}]],
+            axisLabel: {
+                interval: 0,
+                formatter:function(value)
+                {
+                    return value.split("").join("\n");
+                }
+            },
+        },
+        yAxis: {
+            type: 'value',
+            axisLabel: {
+                formatter:'{value}次'
+            }
+        },
+        series: [{
+            data: [[${res.getUnit().getAverage_price_adjustment()}]],
+            type: 'bar',
+            itemStyle: {
+                normal: {
+                    label: {
+                        show: true, //开启显示
+                        position: 'top', //在上方显示
+                        textStyle: { //数值样式
+                            color: 'grey',
+                            fontSize: 12
+                        }
+                    }
+                }
+            },
+        }]
+    };
+    bar_average_price_adjustment.setOption(option2);
+</script>
+<div id="bar_average_followers" style="width: 100%;height:60vh;display: inline-table"></div>
+<script th:inline="javascript" type="text/javascript">
+    var bar_average_followers = echarts.init(document.getElementById('bar_average_followers'));
+    var option2 = {
+        title: {
+            text: '平均关注量柱状图',
+            subtext: '城市:'+[[${res.getCity()}]]+'       影响因素:'+[[${res.getFactor()}]],
+            left: 'center'
+        },
+        xAxis: {
+            type: 'category',
+            data: [[${res.getUnit().getDescription()}]],
+            axisLabel: {
+                interval: 0,
+                formatter:function(value)
+                {
+                    return value.split("").join("\n");
+                }
+            },
+        },
+        yAxis: {
+            type: 'value',
+            axisLabel: {
+                formatter:'{value}个'
+            }
+        },
+        series: [{
+            data: [[${res.getUnit().getAverage_followers()}]],
+            type: 'bar',
+            itemStyle: {
+                normal: {
+                    label: {
+                        show: true, //开启显示
+                        position: 'top', //在上方显示
+                        textStyle: { //数值样式
+                            color: 'grey',
+                            fontSize: 12
+                        }
+                    }
+                }
+            },
+        }]
+    };
+    bar_average_followers.setOption(option2);
+</script>
+<div id="bar_average_pageviews" style="width: 100%;height:60vh;display: inline-table"></div>
+<script th:inline="javascript" type="text/javascript">
+    var bar_average_pageviews = echarts.init(document.getElementById('bar_average_pageviews'));
+    var option2 = {
+        title: {
+            text: '平均浏览量柱状图',
+            subtext: '城市:'+[[${res.getCity()}]]+'       影响因素:'+[[${res.getFactor()}]],
+            left: 'center'
+        },
+        xAxis: {
+            type: 'category',
+            data: [[${res.getUnit().getDescription()}]],
+            axisLabel: {
+                interval: 0,
+                formatter:function(value)
+                {
+                    return value.split("").join("\n");
+                }
+            },
+        },
+        yAxis: {
+            type: 'value',
+            axisLabel: {
+                formatter:'{value}次'
+            }
+        },
+        series: [{
+            data: [[${res.getUnit().getAverage_pageviews()}]],
+            type: 'bar',
+            itemStyle: {
+                normal: {
+                    label: {
+                        show: true, //开启显示
+                        position: 'top', //在上方显示
+                        textStyle: { //数值样式
+                            color: 'grey',
+                            fontSize: 12
+                        }
+                    }
+                }
+            },
+        }]
+    };
+    bar_average_pageviews.setOption(option2);
 </script>

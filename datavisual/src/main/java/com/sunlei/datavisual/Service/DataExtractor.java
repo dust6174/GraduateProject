@@ -4,10 +4,12 @@ import com.sunlei.datavisual.Model.DataAnalyseFactor;
 import com.sunlei.datavisual.Model.DataAnalyseUnit;
 
 import java.io.*;
+import java.text.DecimalFormat;
 import java.util.*;
 
 public class DataExtractor {
     private String data_path = "H:\\codes\\graduateProject\\data\\visual";
+    private static DecimalFormat decimalFormat = new DecimalFormat("#.##");
 
     private DataAnalyseFactor[] bj = new DataAnalyseFactor[15];
     private DataAnalyseFactor[] sh = new DataAnalyseFactor[15];
@@ -87,35 +89,35 @@ public class DataExtractor {
         }
         // 读取平均均价
         for(int i=step*1+1;i<step*2;i++){
-            average_area_price[i%step-1] = Double.parseDouble(infos.get(i).replaceAll("\\(|\\)|'","").split(",")[1]);
+            average_area_price[i%step-1] = Double.parseDouble(decimalFormat.format(Double.parseDouble(infos.get(i).replaceAll("\\(|\\)|'","").split(",")[1])));
         }
         // 读取平均成交价
         for(int i=step*2+1;i<step*3;i++){
-            average_transaction_price[i%step-1] = Double.parseDouble(infos.get(i).replaceAll("\\(|\\)|'","").split(",")[1]);
+            average_transaction_price[i%step-1] = Double.parseDouble(decimalFormat.format(Double.parseDouble(infos.get(i).replaceAll("\\(|\\)|'","").split(",")[1])));
         }
         // 读取平均成交周期
         for(int i=step*3+1;i<step*4;i++){
-            average_transaction_cycle[i%step-1] = Double.parseDouble(infos.get(i).replaceAll("\\(|\\)|'","").split(",")[1]);
+            average_transaction_cycle[i%step-1] = Double.parseDouble(decimalFormat.format(Double.parseDouble(infos.get(i).replaceAll("\\(|\\)|'","").split(",")[1])));
         }
         // 读取平均挂牌价/成交价
         for(int i=step*4+1;i<step*5;i++){
-            average_listing_transaction_price_rate[i%step-1] = Double.parseDouble(infos.get(i).replaceAll("\\(|\\)|'","").split(",")[1]);
+            average_listing_transaction_price_rate[i%step-1] = Double.parseDouble(decimalFormat.format(Double.parseDouble(infos.get(i).replaceAll("\\(|\\)|'","").split(",")[1])));
         }
         // 读取平均带看
         for(int i=step*5+1;i<step*6;i++){
-            average_views[i%step-1] = Double.parseDouble(infos.get(i).replaceAll("\\(|\\)|'","").split(",")[1]);
+            average_views[i%step-1] = Double.parseDouble(decimalFormat.format(Double.parseDouble(infos.get(i).replaceAll("\\(|\\)|'","").split(",")[1])));
         }
         // 读取平均调价次数
         for(int i=step*6+1;i<step*7;i++){
-            average_price_adjustment[i%step-1] = Double.parseDouble(infos.get(i).replaceAll("\\(|\\)|'","").split(",")[1]);
+            average_price_adjustment[i%step-1] = Double.parseDouble(decimalFormat.format(Double.parseDouble(infos.get(i).replaceAll("\\(|\\)|'","").split(",")[1])));
         }
         // 读取平均关注
         for(int i=step*7+1;i<step*8;i++){
-            average_followers[i%step-1] = Double.parseDouble(infos.get(i).replaceAll("\\(|\\)|'","").split(",")[1]);
+            average_followers[i%step-1] = Double.parseDouble(decimalFormat.format(Double.parseDouble(infos.get(i).replaceAll("\\(|\\)|'","").split(",")[1])));
         }
         // 读取平均浏览量
         for(int i=step*8+1;i<step*9;i++){
-            average_pageviews[i%step-1] = Double.parseDouble(infos.get(i).replaceAll("\\(|\\)|'","").split(",")[1]);
+            average_pageviews[i%step-1] = Double.parseDouble(decimalFormat.format(Double.parseDouble(infos.get(i).replaceAll("\\(|\\)|'","").split(",")[1])));
         }
         DataAnalyseUnit unit = new DataAnalyseUnit(description,number,average_area_price,average_transaction_price,average_transaction_cycle,average_listing_transaction_price_rate,average_views,average_price_adjustment,average_followers,average_pageviews);
         DataAnalyseFactor dataAnalyseFactor = new DataAnalyseFactor(city,factor,unit);

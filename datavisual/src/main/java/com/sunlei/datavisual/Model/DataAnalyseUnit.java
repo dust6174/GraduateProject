@@ -1,5 +1,6 @@
 package com.sunlei.datavisual.Model;
 
+import java.text.DecimalFormat;
 import java.util.Arrays;
 
 public class DataAnalyseUnit {
